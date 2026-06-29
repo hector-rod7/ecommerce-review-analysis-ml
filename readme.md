@@ -6,7 +6,7 @@ An end-to-end Machine Learning project for analysing ecommerce product reviews u
 
 ## Dashboard
 
-![Dashboard](images/dashboard.png)
+![Dashboard](images/Dashboard.png)
 
 ---
 
