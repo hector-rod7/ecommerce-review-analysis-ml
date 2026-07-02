@@ -413,7 +413,11 @@ if archivo is None:
     """, unsafe_allow_html=True)
 
 else:
-    df = pd.read_csv(archivo)
+    try:
+        df = pd.read_csv(archivo)
+    except:
+        archivo.seek(0)
+        df = pd.read_csv(archivo, sep=";")
 
     if "parent_asin" not in df.columns:
         st.error("El CSV debe incluir una columna llamada 'parent_asin'.")
